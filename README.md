@@ -5,6 +5,5 @@ Team Members:-
 
 		Sheshank
 		Rohit
-		Antariksh
 		Yash
 		Udvas
