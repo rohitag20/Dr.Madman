@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   p: {fileID: 1073919825}
-  v: {x: -5, y: 2, z: 0}
+  v: {x: -10, y: 2, z: 0}
 --- !u!1 &1073919821
 GameObject:
   m_ObjectHideFlags: 0
