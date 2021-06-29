@@ -5,6 +5,7 @@ public class player_camera : MonoBehaviour
     // Start is called before the first frame update
 
     public Transform p;
+    //public Transform r;
     public Vector3 v;
 
 
@@ -12,5 +13,6 @@ public class player_camera : MonoBehaviour
     void Update()
     {
         transform.position =p.position + v;
+        //transform.rotation = r.rotation;
     }
 }
