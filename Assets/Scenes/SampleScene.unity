@@ -13292,7 +13292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1532036835
 Light:
   m_ObjectHideFlags: 0
@@ -16652,7 +16652,7 @@ PrefabInstance:
       objectReference: {fileID: 2100387823}
     - target: {fileID: 2058654200537958603, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: jumpHeight
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2058654200537958603, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: groundCheck
