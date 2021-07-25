@@ -17261,7 +17261,7 @@ PrefabInstance:
       objectReference: {fileID: 2100387823}
     - target: {fileID: 2058654200537958603, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: jumpHeight
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2058654200537958603, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: groundCheck
@@ -17274,6 +17274,10 @@ PrefabInstance:
     - target: {fileID: 4147526012326050463, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147526012326050463, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
+      propertyPath: m_Center.y
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 4147526012326050463, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: m_IsTrigger
