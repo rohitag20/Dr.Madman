@@ -16,4 +16,12 @@ public class MainMenuScript : MonoBehaviour
     public void ContinueGame(){
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void CreditScene(){
+        SceneManager.LoadScene("CreditsScene");
+    }
+
+    public void ReturnMenu(){
+        SceneManager.LoadScene("Menu");
+    }
 }
