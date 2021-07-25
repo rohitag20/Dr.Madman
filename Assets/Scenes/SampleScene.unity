@@ -17265,7 +17265,7 @@ PrefabInstance:
       objectReference: {fileID: 2100387823}
     - target: {fileID: 2058654200537958603, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: jumpHeight
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2058654200537958603, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: groundCheck
@@ -17289,11 +17289,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6697013115091904230, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
       propertyPath: m_Constraints
-      value: 48
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 130690409423693768, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
-    - {fileID: 6697013115091904230, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 069db5c7ea7806349a0929ead3fc2c72, type: 3}
 --- !u!1001 &8486353979214769931
 PrefabInstance:

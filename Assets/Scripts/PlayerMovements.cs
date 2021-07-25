@@ -10,7 +10,7 @@ public class PlayerMovements : MonoBehaviour
     public float gravity = -19.62f;
     public float jumpHeight = 5f;
 
-    bool iHaveJumped = false;
+   // bool iHaveJumped = false;
 
     // public Transform groundCheck;
     // public float groundDistance =0.4f;
@@ -27,14 +27,14 @@ public class PlayerMovements : MonoBehaviour
     {
         //isGrounded = Physics.CheckSphere(groundCheck.position,groundDistance,groundMask);
 
-        if(/*isGrounded &&*/  iHaveJumped && velocity.y >= -(Mathf. Sqrt(jumpHeight * -2f * gravity)))
+        if(/*isGrounded &&  iHaveJumped &&*/ velocity.y >= -(Mathf. Sqrt(jumpHeight * -2f * gravity)))
         {
                 velocity.y +=gravity * Time.deltaTime;
         }               
             
         else if(velocity.y < -(Mathf. Sqrt(jumpHeight * -2f * gravity))){
             velocity.y = 0f;
-            iHaveJumped = false;
+           // iHaveJumped = false;
         }
         
         
@@ -52,10 +52,10 @@ public class PlayerMovements : MonoBehaviour
         Vector3 move =transform.right*x +transform.forward*z;
         controller.Move(move * speed * Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump") && (!iHaveJumped)/*&& isGrounded*/)
+        if(Input.GetButtonDown("Jump")) //&& (!iHaveJumped)/*&& isGrounded*/)
         {
             velocity.y = Mathf. Sqrt(jumpHeight * -2f * gravity);
-            iHaveJumped = true;
+            //iHaveJumped = true;
         }
 
         
