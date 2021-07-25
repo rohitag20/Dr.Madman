@@ -17,7 +17,7 @@ public class GameEnding : MonoBehaviour
     
     void OnTriggerEnter (Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == player && (other.GetComponent<PlayerCollect>().flask == 0))
         {
             m_IsPlayerAtExit = true;
         }
@@ -40,6 +40,7 @@ public class GameEnding : MonoBehaviour
         }
     }
 
+    
     void EndLevel (CanvasGroup imageCanvasGroup, bool doRestart)
     {
         m_Timer += Time.deltaTime;

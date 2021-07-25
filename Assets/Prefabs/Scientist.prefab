@@ -106,10 +106,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457950172736019594}
-  - component: {fileID: 130690409423693768}
   - component: {fileID: 6697013115091904230}
   - component: {fileID: 4147526012326050463}
   - component: {fileID: 2058654200537958603}
+  - component: {fileID: 1329466912260248271}
   m_Layer: 0
   m_Name: Scientist
   m_TagString: Untagged
@@ -133,25 +133,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &130690409423693768
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941577699723445808}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bdb0862e2502cab4693406664802fc31, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &6697013115091904230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,6 +179,25 @@ MonoBehaviour:
   speed: 12
   gravity: -9.81
   jumpHeight: 3
+--- !u!95 &1329466912260248271
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941577699723445808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bdb0862e2502cab4693406664802fc31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &956345356737008210
 GameObject:
   m_ObjectHideFlags: 0
