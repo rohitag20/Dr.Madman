@@ -27,7 +27,13 @@ public class PlayerCollect : MonoBehaviour
 
         GUI.Label(new Rect(150,50,200,40), "Score: " + (points * 10),guistyle);
 
+        if(flask > 0){
         GUI.Label(new Rect(2500,50,200,40), "You need to get " + flask + " flask(s)",guistyle2);
+        }
+
+        else{
+            GUI.Label(new Rect(2500,50,200,40), "You got all flasks, \n Move towards the door \n To get to the next room.",guistyle2);
+        }
 
         
     }
