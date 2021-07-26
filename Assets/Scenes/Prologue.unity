@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 1311785385}
   - component: {fileID: 1311785384}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Prologue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
