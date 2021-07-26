@@ -12,7 +12,7 @@ public class WayPointandFollow : MonoBehaviour
     bool m_PlayerIsSeen;
 
 
-    int m_CurrentWaypointIndex;
+    int m_CurrentWaypointIndex = 0;
 
 
     // Start is called before the first frame update
