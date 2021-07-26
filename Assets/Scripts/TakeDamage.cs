@@ -15,13 +15,10 @@ public class TakeDamage : MonoBehaviour
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Space)){
-            Damage(20);
-        }
+        // if(Input.GetKeyDown(KeyCode.Space)){
+        //     Damage(20);
+        // }
     }
 
-    void Damage(int damage){
-        currentHealth -= 20;
-        healthBar.SetHealth(currentHealth);
-    }
+    
 }
