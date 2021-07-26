@@ -40,7 +40,9 @@
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Sounds\Footsteps System\Scripts\FootstepsSystem.cs" />
      <Compile Include="Assets\Scripts\Prologue.cs" />
+     <Compile Include="Assets\Scripts\CollectFlask.cs" />
      <Compile Include="Assets\Sounds\Footsteps System\Demos\Simple Controller\demo scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\CollectCoins.cs" />
      <Compile Include="Assets\Scripts\FunctionTimer.cs" />
      <Compile Include="Assets\Sounds\Footsteps System\Demos\Simple Controller\demo scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MainMenuScript.cs" />
@@ -48,13 +50,14 @@
      <Compile Include="Assets\Sounds\Footsteps System\Scripts\FootStepsAudioList.cs" />
      <Compile Include="Assets\Scripts\player_camera.cs" />
      <Compile Include="Assets\Scripts\PlayerMovements.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollect.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\PauseMenuScript.cs" />
      <Compile Include="Assets\Scripts\WayPointandFollow.cs" />
      <Compile Include="Assets\Scripts\Observer.cs" />
-     <Compile Include="Assets\Scripts\PlayerCollect.cs" />
-     <Compile Include="Assets\Scripts\CollectCoins.cs" />
-     <Compile Include="Assets\Scripts\CollectFlask.cs" />
+     <Compile Include="Assets\Scripts\ChemicalPuddle.cs" />
+     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\TakeDamage.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
