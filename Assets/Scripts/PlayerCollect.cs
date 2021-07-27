@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCollect : MonoBehaviour
 {
-    public int points = 0;
+    public int points = 0; 
     public int flask = 2;
 
     

@@ -6,19 +6,25 @@ using UnityEngine.SceneManagement;
 public class GameEnding : MonoBehaviour
 {
     public FunctionTimer functionTimer2;
+    public HealthBar healthBar;
+    public TakeDamage takeDamage;
     public float fadeDuration = 1f;
     public float displayImageDuration = 1f;
     public GameObject player;
     public CanvasGroup exitBackgroundImageCanvasGroup; 
     public CanvasGroup caughtBackgroundImageCanvasGroup;
 
+    public CanvasGroup GameWin;
+    public AudioSource exitAudio;
+    public AudioSource caughtAudio;
+    public AudioSource healthReduce;
+
     bool m_IsPlayerAtExit;
     bool m_IsPlayerCaught;
     float m_Timer;
     bool tookDamage = false;
-    public HealthBar healthBar;
-
-    public TakeDamage takeDamage;
+    bool m_HasAudioPlayed;
+    
     
     void Start(){
         functionTimer2 = new FunctionTimer(Reset,2f);
@@ -40,7 +46,12 @@ public class GameEnding : MonoBehaviour
     {
         if (m_IsPlayerAtExit)
         {
-            EndLevel (exitBackgroundImageCanvasGroup, false);
+            if(SceneManager.GetActiveScene().buildIndex == 4){
+                EndLevel (GameWin, false, exitAudio);
+            }
+            else{
+                EndLevel (exitBackgroundImageCanvasGroup, false, exitAudio);
+            }
         }
         else if (m_IsPlayerCaught)
         {
@@ -52,7 +63,7 @@ public class GameEnding : MonoBehaviour
             }
 
             if(takeDamage.currentHealth == 0){
-                EndLevel(caughtBackgroundImageCanvasGroup, true);
+                EndLevel(caughtBackgroundImageCanvasGroup, true, caughtAudio);
             }
 
             
@@ -72,6 +83,7 @@ public class GameEnding : MonoBehaviour
             healthBar.SetHealth(takeDamage.currentHealth);
         }
         else{
+            healthReduce.Play();
             healthBar.SetHealth(takeDamage.currentHealth);
             functionTimer2 = new FunctionTimer(Reset,2f);
         }
@@ -91,8 +103,12 @@ public class GameEnding : MonoBehaviour
         tookDamage = false;
         
     }
-    void EndLevel (CanvasGroup imageCanvasGroup, bool doRestart)
+    void EndLevel (CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
     {
+        if(!m_HasAudioPlayed){
+            audioSource.Play();
+            m_HasAudioPlayed = true;
+        }
         m_Timer += Time.deltaTime;
         imageCanvasGroup.alpha = m_Timer / fadeDuration;
 
