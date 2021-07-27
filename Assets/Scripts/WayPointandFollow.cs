@@ -29,9 +29,10 @@ public class WayPointandFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(m_PlayerIsSeen){
-        //     EnemyPath.SetDestination(Player.position);
-        // }
+        if(m_PlayerIsSeen){
+            EnemyPath.SetDestination(Player.transform.position);
+            m_PlayerIsSeen = false;
+        }
         if(EnemyPath.remainingDistance < EnemyPath.stoppingDistance)
         {
             m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;

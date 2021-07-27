@@ -105,7 +105,7 @@ public class GameEnding : MonoBehaviour
             }
             else
             {
-                Application.Quit ();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }
