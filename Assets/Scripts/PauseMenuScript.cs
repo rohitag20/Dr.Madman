@@ -40,6 +40,11 @@ public class PauseMenuScript : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void LoadHelp(){
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("HelpMenu");
+    }
+
     public void QuitGame(){
         Debug.Log("Quit");
         Application.Quit();

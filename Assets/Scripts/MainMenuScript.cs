@@ -21,6 +21,10 @@ public class MainMenuScript : MonoBehaviour
         SceneManager.LoadScene("CreditsScene");
     }
 
+    public void HelpScene(){
+        SceneManager.LoadScene("HelpMenu");
+    }
+
     public void ReturnMenu(){
         SceneManager.LoadScene("Menu");
     }
