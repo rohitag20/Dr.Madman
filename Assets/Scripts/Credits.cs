@@ -10,7 +10,7 @@ public class Credits : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        functionTimer = new FunctionTimer(TestingAction,10f);
+        functionTimer = new FunctionTimer(TestingAction,15f);
     }
 
     private void Update(){

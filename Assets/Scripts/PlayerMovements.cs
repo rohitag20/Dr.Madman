@@ -6,11 +6,15 @@ public class PlayerMovements : MonoBehaviour
 {
 
     public CharacterController controller;
+
+    public AudioSource Jump;
     public float speed = 12f;
     public float gravity = -19.62f;
     public float jumpHeight = 5f;
 
     bool iHaveJumped = false;
+
+    
 
     // public Transform groundCheck;
     // public float groundDistance =0.4f;
@@ -19,8 +23,14 @@ public class PlayerMovements : MonoBehaviour
 
     Vector3 velocity;
 
+    AudioSource m_AudioSource;
+
     
+
     
+    void Start(){
+        m_AudioSource = GetComponent<AudioSource>();
+    }
     // bool isGrounded;
 
     void Update()
@@ -35,6 +45,7 @@ public class PlayerMovements : MonoBehaviour
         if(velocity.y < -(Mathf. Sqrt(jumpHeight * -2f * gravity))){
              
             iHaveJumped = false;
+         
         }
         
         velocity.y +=gravity * Time.deltaTime;
@@ -50,6 +61,22 @@ public class PlayerMovements : MonoBehaviour
         float x =Input.GetAxis("Horizontal");
         float z =Input.GetAxis("Vertical");
         
+        bool hasHorizontalInput = !Mathf.Approximately (x, 0f);
+        bool hasVerticalInput = !Mathf.Approximately (z, 0f);
+        bool isWalking = (hasHorizontalInput || hasVerticalInput) && (!iHaveJumped);
+
+        if (isWalking)
+        {
+            if (!m_AudioSource.isPlaying)
+            {
+                m_AudioSource.Play();
+            }
+        }
+        else
+        {
+            m_AudioSource.Stop ();
+        }
+
         Vector3 move =transform.right*x +transform.forward*z;
         controller.Move(move * speed * Time.deltaTime);
 
@@ -57,6 +84,8 @@ public class PlayerMovements : MonoBehaviour
         {
             velocity.y = Mathf. Sqrt(jumpHeight * -2f * gravity);
             iHaveJumped = true;
+            Jump.Play();
+            
         }
 
         
