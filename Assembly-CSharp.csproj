@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Prologue.cs" />
      <Compile Include="Assets\Scripts\CollectFlask.cs" />
+     <Compile Include="Assets\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\Sounds\Footsteps System\Demos\Simple Controller\demo scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\CollectCoins.cs" />
      <Compile Include="Assets\Scripts\FunctionTimer.cs" />

@@ -1,14 +1,14 @@
 sceneSetups:
 - path: Assets/Scenes/CreditsScene.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Menu.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Prologue.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/SampleScene.unity
@@ -16,10 +16,10 @@ sceneSetups:
   isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/HelpMenu.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Level 2.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
