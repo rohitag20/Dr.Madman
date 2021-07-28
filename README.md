@@ -19,11 +19,9 @@ Sample Video - https://drive.google.com/file/d/18Va-iHrAMeJrlBdUQZ1wuaMBK4M2ZRij
 
 My Contributions
 
-Applying Animations to the character.(I also made a character from scratch with animation in blender but that didn't worked).
-Creating Flasks and puddles.
-Appling lightings in the scene.
-
-
+	# Applying Animations to the character.(I also made a character from scratch with animation in blender but that didn't worked).
+	# Creating Flasks and puddles.
+	# Appling lightings in the scene.
 
 Design Doc Link :- https://docs.google.com/document/d/15oiKdfs9Y8A1WapkhmEsURrhRBDxU8ZPBx4H7-7dfC8/edit?usp=sharing
 
