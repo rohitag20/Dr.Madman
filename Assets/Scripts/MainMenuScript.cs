@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public LevelLoader Level;
     public void PlayGame(){
-        SceneManager.LoadScene("Prologue");
+        Level.LoadNextLevel(2);
     }
 
     public void QuitGame(){
@@ -14,18 +15,18 @@ public class MainMenuScript : MonoBehaviour
     }
 
     public void ContinueGame(){
-        SceneManager.LoadScene("SampleScene");
+        Level.LoadNextLevel(3);
     }
 
     public void CreditScene(){
-        SceneManager.LoadScene("CreditsScene");
+        Level.LoadNextLevel(5);
     }
 
     public void HelpScene(){
-        SceneManager.LoadScene("HelpMenu");
+        Level.LoadNextLevel(1);
     }
 
     public void ReturnMenu(){
-        SceneManager.LoadScene("Menu");
+        Level.LoadNextLevel(0);
     }
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CollectCoins : MonoBehaviour
 {
-    public GameObject player; 
+    public GameObject player;
 
     
-    // public AudioSource collectAudio;
+    public AudioSource collectAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class CollectCoins : MonoBehaviour
         if(other.gameObject == player){
             Destroy(gameObject);
             other.GetComponent<PlayerCollect>().points++;
-            // collectAudio.Play();
+            collectAudio.Play();
         }
     }
 

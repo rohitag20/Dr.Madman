@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
+    public LevelLoader Level;
     public FunctionTimer functionTimer2;
     public HealthBar healthBar;
     public TakeDamage takeDamage;
@@ -117,11 +118,13 @@ public class GameEnding : MonoBehaviour
         {
             if (doRestart)
             {
-                SceneManager.LoadScene (0);
+                // SceneManager.LoadScene (0);
+                Level.LoadNextLevel(0);
             }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                Level.LoadNextLevel(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }

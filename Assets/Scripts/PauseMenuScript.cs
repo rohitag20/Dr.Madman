@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuScript : MonoBehaviour
 {
-
+    public LevelLoader Level;
+    
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
@@ -37,12 +38,14 @@ public class PauseMenuScript : MonoBehaviour
 
     public void LoadMenu(){
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        Level.LoadNextLevel(0);
+
     }
 
     public void LoadHelp(){
         Time.timeScale = 1f;
-        SceneManager.LoadScene("HelpMenu");
+        Level.LoadNextLevel(1);
+
     }
 
     public void QuitGame(){
