@@ -20,9 +20,7 @@ Sample Video - https://drive.google.com/file/d/18Va-iHrAMeJrlBdUQZ1wuaMBK4M2ZRij
 My Contributions
 
 Applying Animations to the character.(I also made a character from scratch with animation in blender but that didn't worked).
-
 Creating Flasks and puddles.
-
 Appling lightings in the scene.
 
 
